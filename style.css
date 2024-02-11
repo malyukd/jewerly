@@ -9,6 +9,9 @@ html {
 
 body {
     background-color: #181818;
+    width: 1920px;
+    height: 6590px;
+    margin: auto;
 }
 
 .first {
@@ -822,6 +825,7 @@ margin-top: -2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .logo{
     width: 230px;
@@ -854,8 +858,8 @@ margin-top: -2px;
 .sm{
     width: 229px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: auto auto auto;
+    gap: 0px;
 }
 
 
