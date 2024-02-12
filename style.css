@@ -29,7 +29,9 @@ header {
     width: 70%;
     margin: auto;
     font-family: 'Rubik', sans-serif;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header_logo {
@@ -47,96 +49,93 @@ header {
     padding-bottom: 27px;
     padding-top: 27px;
 }
+
 nav {
-    width: 487px;
+    width: 394px;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: auto;
 }
-li{
-    list-style: none;
-    display: inline;
-    margin-right: 31px;
+
+ul {
+    display: flex;
+    justify-content: space-between;
 }
-li a{
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
     font-weight: lighter;
     font-size: 16px;
     color: white;
     font-weight: 200;
+    cursor: pointer;
 }
 
-.strange {
-    margin-top: 218px;
-    margin-left: 285px;
+.jdesign {
+    width: 70%;
+    margin: auto;
+    padding-top: 218px;
+    padding-bottom: 333px;
 }
 
-.strange h2 {
+.jdesign h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-stretch: extra-expanded;
     color: #CBA15E;
-    display: inline;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 133px 32px;
+    padding-bottom: 11px;
 }
 
-#invisible {
-    opacity: 1;
-    display: inline;
-    color: #524E4C;
-    font-size: 5px;
+.jdesign span {
+    width: 32px;
+    display: block;
     border-bottom: 1px solid #CBA15E;
 }
 
-.strange h1 {
+.jdesign h1 {
     font-family: 'Rubik', sans-serif;
     color: white;
     font-size: 42px;
-    font-weight: 500;
-    margin-top: 13px;
-    margin-left: -2px;
+    font-weight: 600;
+    padding-bottom: 17px;
 }
 
-.strange p {
+.jdesign p {
+    width: 545px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(220, 220, 220);
-    margin-top: 22px;
-    font-size: 16, 5px;
-    font-weight: 400;
-    font-stretch: semi-expanded;
-    line-height: 27px;
-}
-
-.one {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 60px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    padding: 19px 45px;
-    color: black;
-}
-
-.two {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 60px;
-    margin-left: 22px;
-    font-size: 16px;
-    font-family: 'Lora', serif;
-    padding: 21px 45px;
-    padding-bottom: 22px;
     color: white;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: extra-expanded;
+    line-height: 27px;
+    padding-bottom: 75px;
+    line-height: 26px;
+}
+
+.button {
     background-color: #CBA15E;
+    padding: 23px 45px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin-right: 23px;
+}
+
+.button:hover {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    color: #000000;
 }
 
 .service {
@@ -145,65 +144,30 @@ li a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     font-family: 'Rubik', sans-serif;
+    
 }
 
-.service h4 {
+.s_icons {
+    padding-top: 120px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.s_icons h2 {
+    padding-top: 30px;
     font-size: 25px;
     color: white;
     font-weight: 300;
+    padding-bottom: 15px;
 }
 
-.service p {
+.s_icons p {
     font-size: 16px;
     font-weight: 100;
     color: #A1A1A1;
-    line-height: 1, 7;
-}
-
-.gift {
-    margin-top: 129px;
-    width: 300px;
-    height: 179px;
-    text-align: center;
-}
-
-.gift h4 {
-    margin-top: 27px;
-}
-
-.gift p {
-    margin-top: 14px;
-}
-
-.dimond {
-    margin-top: 129px;
-    width: 319px;
-    height: 179px;
-    text-align: center;
-}
-
-.dimond h4 {
-    margin-top: 30px;
-}
-
-.dimond p {
-    margin-top: 14px;
-}
-
-.ring {
-    margin-top: 129px;
-    width: 286px;
-    height: 177px;
-    text-align: center;
-}
-
-.ring h4 {
-    margin-top: 34px;
-}
-
-.ring p {
-    margin-top: 14px;
+    line-height: 19px;
 }
 
 .about_back {
@@ -220,9 +184,8 @@ li a{
     height: 884px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 121px;
-    background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)) 805px 0px, 
-    url(imagine/woman.png) 805px 0px, url(imagine/rings.png) 442px 325px;
+    background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)) 805px 0px,
+        url(imagine/woman.png) 805px 0px, url(imagine/rings.png) 442px 325px;
     background-size: 545px 689px, auto, auto;
     background-repeat: no-repeat;
 }
@@ -248,14 +211,15 @@ li a{
     border-bottom: 1px solid #CBA15E;
 }
 
-.a_text h2{
+.a_text h2 {
     margin-top: 13px;
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     color: white;
 }
-.a_text p{
+
+.a_text p {
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -263,32 +227,38 @@ li a{
     line-height: 24px;
     color: #A1A1A1;
 }
-.a_text h3{
+
+.a_text h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
     font-weight: 500;
-    line-height: 28,5px;
+    line-height: 28, 5px;
     color: white;
 }
-.newring{
+
+.newring {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.newringtext{
+
+.newringtext {
     margin-left: 23px;
 }
-.wedding{
+
+.wedding {
     margin-top: 55px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-.weddingtext{
+
+.weddingtext {
     margin-left: 23px;
 }
-.a_text button{
+
+.a_text button {
     border: none;
     outline: none;
     display: inline-block;
@@ -303,10 +273,11 @@ li a{
     font-weight: 400;
     background-color: #CBA15E;
 }
-.clienticon{
+
+.clienticon {
     width: 70%;
     height: 103px;
-    
+
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -314,27 +285,31 @@ li a{
     justify-content: space-between;
     text-align: center;
 }
-.clienticon h2{
+
+.clienticon h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     color: #bbbbbbba;
 }
-.clienticon p{
+
+.clienticon p {
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     color: #bbbbbb74;
 }
-.ourselection{
+
+.ourselection {
     width: 70%;
     height: 575px;
     margin-top: 121px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .ourselection h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -344,6 +319,7 @@ li a{
     display: inline;
 
 }
+
 #dracks2 {
     display: inline;
     color: #181818;
@@ -351,7 +327,8 @@ li a{
     display: inline;
     border-bottom: 1px solid #CBA15E;
 }
-.ourselection h2{
+
+.ourselection h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
@@ -359,25 +336,28 @@ li a{
     margin-top: 7px;
     color: white;
 }
-.items{
+
+.items {
     height: 482px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.i{
+
+.i {
     text-align: center;
 }
 
-.i h2{
+.i h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #999999;
 }
-.i h3{
+
+.i h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -385,7 +365,8 @@ li a{
     color: white;
     display: inline;
 }
-.i h4{
+
+.i h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     margin-left: 10px;
@@ -395,7 +376,8 @@ li a{
     text-decoration: line-through;
     display: inline;
 }
-.curly2{
+
+.curly2 {
     width: 1919px;
     height: 1286px;
     margin-top: 60px;
@@ -403,9 +385,10 @@ li a{
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
-.originofbeauty{
+
+.originofbeauty {
     padding-top: 80px;
     width: 70%;
     height: 569px;
@@ -416,26 +399,30 @@ li a{
     justify-content: space-between;
     align-items: center;
 }
-.hand{
+
+.hand {
     width: 382px;
     height: 569px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)), 
-    url(imagine/hand.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)),
+        url(imagine/hand.png);
     background-repeat: no-repeat no-repeat;
     background-size: 382px 569px, auto;
 }
-.woman2{
+
+.woman2 {
     width: 382px;
     height: 569px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px, 
-    url(imagine/woman2.png) 0px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px,
+        url(imagine/woman2.png) 0px 0px;
     background-repeat: no-repeat no-repeat;
     background-size: 382px 569px, auto;
 }
-.text{
+
+.text {
     width: 501px;
-    height: 400px;  
+    height: 400px;
 }
+
 .text h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -445,6 +432,7 @@ li a{
     display: inline;
 
 }
+
 #dracks3 {
     display: inline;
     color: #181818;
@@ -452,7 +440,8 @@ li a{
     display: inline;
     border-bottom: 1px solid #CBA15E;
 }
-.text h2{
+
+.text h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
@@ -460,7 +449,8 @@ li a{
     margin-top: 7px;
     color: white;
 }
-.text p{
+
+.text p {
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -468,7 +458,8 @@ li a{
     line-height: 24px;
     color: #A1A1A1;
 }
-.text button{
+
+.text button {
     border: none;
     outline: none;
     display: inline-block;
@@ -483,7 +474,8 @@ li a{
     font-weight: 400;
     background-color: #CBA15E;
 }
-.collection{
+
+.collection {
     height: 528px;
     width: 100%;
     margin-top: 120px;
@@ -491,12 +483,14 @@ li a{
     flex-direction: row;
     justify-content: space-between;
 }
-.b{
+
+.b {
     position: relative;
     height: 528px;
     width: 457px;
 }
-.b p{
+
+.b p {
     position: absolute;
     top: 249px;
     left: 188px;
@@ -509,12 +503,14 @@ li a{
     font-stretch: semi-expanded;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
-  }
-  .b:hover p {
+}
+
+.b:hover p {
     visibility: visible;
     opacity: 1;
-  }
-.invis{
+}
+
+.invis {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -528,18 +524,20 @@ li a{
     opacity: 0;
     transition: opacity .2s, visibility .2s;
 }
-.b:hover .invis{
+
+.b:hover .invis {
     visibility: visible;
     opacity: 1;
 }
 
-.insta{
+.insta {
     margin-top: 120px;
     width: 90%;
     height: 510px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .insta h4 {
     margin-left: 193px;
     text-transform: uppercase;
@@ -551,6 +549,7 @@ li a{
     display: inline;
 
 }
+
 #dracks4 {
     display: inline;
     color: #181818;
@@ -558,7 +557,8 @@ li a{
     display: inline;
     border-bottom: 1px solid #CBA15E;
 }
-.insta h2{
+
+.insta h2 {
     margin-left: 193px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
@@ -568,7 +568,8 @@ li a{
     margin-top: 9px;
     color: white;
 }
-.instafoto{
+
+.instafoto {
     margin-top: 65px;
     height: 359px;
     width: 100%;
@@ -576,13 +577,15 @@ li a{
     flex-direction: row;
     justify-content: space-between;
 }
-.news{
+
+.news {
     margin-top: 121px;
     height: 770px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
+
 .news h4 {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -593,6 +596,7 @@ li a{
     display: inline;
 
 }
+
 #dracks5 {
     display: inline;
     color: #181818;
@@ -600,7 +604,8 @@ li a{
     display: inline;
     border-bottom: 1px solid #CBA15E;
 }
-.news h2{
+
+.news h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
@@ -609,71 +614,80 @@ li a{
     font-stretch: semi-expanded;
     color: white;
 }
-.news2{
+
+.news2 {
     width: 100%;
     margin-top: 44px;
     height: 548px;
     display: grid;
     grid-template-areas:
-    "A A A A   B B B B   B B B B"
-    "A A A A   C C C C   C C C C"
-    "A A A A   D D D D   D D D D";
+        "A A A A   B B B B   B B B B"
+        "A A A A   C C C C   C C C C"
+        "A A A A   D D D D   D D D D";
     column-gap: 34px;
     row-gap: 51px;
 }
-.sa{
+
+.sa {
     grid-area: A;
     width: 661px;
     height: 548px;
 }
-.sb{
+
+.sb {
     grid-area: B;
     width: 656px;
     height: 148px;
     background-color: #1F1F1F;
     display: grid;
     grid-template-columns: 230px auto;
-    gap:13px;
+    gap: 13px;
 }
-.sc{
+
+.sc {
     grid-area: C;
     width: 656px;
     height: 148px;
     background-color: #1F1F1F;
     display: grid;
     grid-template-columns: 230px auto;
-    gap:13px;
+    gap: 13px;
 }
-.sd{
+
+.sd {
     grid-area: D;
     width: 656px;
     height: 148px;
     background-color: #1F1F1F;
     display: grid;
     grid-template-columns: 230px auto;
-    gap:13px;
+    gap: 13px;
 }
-.state{
+
+.state {
     margin-top: 18px;
     display: flex;
     flex-direction: column;
 }
-.state a{
+
+.state a {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #CBA15E;
     display: inline;
     margin-top: 18px;
-} 
-.invisman{
+}
+
+.invisman {
     display: inline;
     color: #181818;
     font-size: 5px;
     margin-top: 18px;
     border-bottom: 1px solid #CBA15E;
 }
-.state h9{
+
+.state h9 {
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     font-weight: 600;
@@ -682,7 +696,8 @@ li a{
     font-stretch: semi-expanded;
     color: white;
 }
-.news h11{
+
+.news h11 {
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
@@ -690,7 +705,8 @@ li a{
     line-height: 25px;
     color: #A1A1A1;
 }
-.news p{
+
+.news p {
     margin-top: 14px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -698,7 +714,8 @@ li a{
     line-height: 24px;
     color: #A1A1A1;
 }
-.news button{
+
+.news button {
     border: none;
     outline: none;
     display: inline-block;
@@ -714,7 +731,8 @@ li a{
     background-color: #CBA15E;
     margin-left: 590px;
 }
-footer{
+
+footer {
     margin-top: 120px;
     width: 100%;
     height: 482px;
@@ -724,7 +742,8 @@ footer{
     background-size: auto;
     background-repeat: no-repeat;
 }
-.contact{
+
+.contact {
     padding-top: 71px;
     height: 331px;
     width: 70%;
@@ -734,7 +753,8 @@ footer{
     grid-template-columns: 469px 100px 110px 339px;
     gap: 111px;
 }
-.contact h2{
+
+.contact h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 22px;
     font-weight: 500;
@@ -742,10 +762,12 @@ footer{
     font-stretch: semi-expanded;
     color: white;
 }
-.signup{
+
+.signup {
     text-align: left;
 }
-.signup p{
+
+.signup p {
     margin-top: 18px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -753,7 +775,8 @@ footer{
     line-height: 26px;
     color: #A1A1A1;
 }
-#email{
+
+#email {
     border: none;
     outline: none;
     display: inline-block;
@@ -765,12 +788,13 @@ footer{
     font-family: 'Poppins', sans-serif;
     padding: 15px 16px;
     padding-right: 142px;
-    color:#4D4343;
+    color: #4D4343;
     font-weight: 400;
-    background-color:#D9D9D9;
+    background-color: #D9D9D9;
     display: inline;
 }
-#sub{
+
+#sub {
     border: none;
     outline: none;
     display: inline-block;
@@ -787,29 +811,34 @@ footer{
     background-color: #CBA15E;
     margin-left: -4px;
 }
-.textc{
-margin-top: -2px;
+
+.textc {
+    margin-top: -2px;
 }
-.textc p{
-  margin-top: 12px;
-  font-family: 'Poppins', sans-serif;
+
+.textc p {
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #A1A1A1;
 }
-.text3{
+
+.text3 {
     margin-top: 22px;
 }
-.text3 p{
+
+.text3 p {
     margin-top: 12px;
     font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #A1A1A1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A1A1A1;
 }
-.text3 a{
+
+.text3 a {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -817,7 +846,8 @@ margin-top: -2px;
     color: white;
     text-decoration: underline;
 }
-.thelast{
+
+.thelast {
     margin-top: 20px;
     width: 70%;
     height: 60px;
@@ -828,12 +858,14 @@ margin-top: -2px;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 230px;
     display: flex;
     flex-direction: row;
 }
-.logo h2{
+
+.logo h2 {
     margin-left: 10px;
     margin-top: 9px;
     text-transform: uppercase;
@@ -844,10 +876,12 @@ margin-top: -2px;
     color: #CBA15E;
     line-height: 19px;
 }
-.copy{
+
+.copy {
     width: 540px;
 }
-.copy h2{
+
+.copy h2 {
     margin-top: 9px;
     font-family: 'Rubik', sans-serif;
     font-size: 21px;
@@ -856,12 +890,10 @@ margin-top: -2px;
     font-stretch: semi-expanded;
     color: white;
 }
-.sm{
+
+.sm {
     width: 229px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 0px;
 }
-
-
-
