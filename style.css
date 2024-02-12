@@ -63,6 +63,11 @@ li {
     list-style: none;
     display: inline;
     padding-right: 31px;
+    padding-bottom: 10px;
+}
+li:hover{
+    border-bottom: 1px solid #CBA15E;
+    width: max-content;
 }
 
 #myTopnav {
@@ -253,7 +258,6 @@ li {
     display: inline;
     color: #181818;
     font-size: 5px;
-    display: inline;
     border-bottom: 1px solid #CBA15E;
 }
 
@@ -493,45 +497,55 @@ li {
     background-color: #CBA15E;
 }
 .collection{
-    height: 528;
+    height: 528px;
     width: 100%;
     margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.b1{
-    width: 457px;
+.b{
+    position: relative;
     height: 528px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px, 
-    url(banner1.png) 0px 0px;
-    background-repeat: no-repeat no-repeat;
-    background-size: 457px 528px, auto; 
-}
-.b2{
     width: 457px;
-    height: 528px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px, 
-    url(banner2.png) 0px 0px;
-    background-repeat: no-repeat no-repeat;
-    background-size: 457px 528px, auto; 
 }
-.b3{
-    width: 457px;
-    height: 528px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px, 
-    url(banner3.png) 0px 0px;
-    background-repeat: no-repeat no-repeat;
-    background-size: 457px 528px, auto; 
+.b p{
+    position: absolute;
+    top: 249px;
+    left: 188px;
+    color: #fff;
+    visibility: hidden;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    font-stretch: semi-expanded;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+  }
+  .b:hover p {
+    visibility: visible;
+    opacity: 1;
+  }
+.invis{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.591);
+    background-size: 100% 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
 }
-.b4{
-    width: 457px;
-    height: 528px;
-    background: linear-gradient(rgba(0, 0, 0, 0.046), rgba(0, 0, 0, 0.046)) 0px 0px, 
-    url(banner4.png) 0px 0px;
-    background-repeat: no-repeat no-repeat;
-    background-size: 457px 528px, auto; 
+.b:hover .invis{
+    visibility: visible;
+    opacity: 1;
 }
+
 .insta{
     margin-top: 120px;
     width: 90%;
