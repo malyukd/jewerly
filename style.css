@@ -94,7 +94,7 @@ li a {
     padding-bottom: 11px;
 }
 
-.jdesign span {
+.line {
     width: 32px;
     display: block;
     border-bottom: 1px solid #CBA15E;
@@ -116,7 +116,7 @@ li a {
     font-weight: 300;
     font-stretch: extra-expanded;
     line-height: 27px;
-    padding-bottom: 75px;
+    padding-bottom: 80px;
     line-height: 26px;
 }
 
@@ -125,7 +125,7 @@ li a {
     padding: 23px 45px;
     font-family: 'Lora', serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: white;
     text-decoration: none;
     margin-right: 23px;
@@ -146,7 +146,7 @@ li a {
     justify-content: space-between;
     align-items: baseline;
     font-family: 'Rubik', sans-serif;
-    
+
 }
 
 .s_icons {
@@ -172,7 +172,6 @@ li a {
 
 .about_back {
     width: 1920px;
-    height: 884px;
     margin: auto;
     background-image: url(imagine/curly.png);
     background-repeat: no-repeat;
@@ -181,7 +180,6 @@ li a {
 
 .about {
     width: 70%;
-    height: 884px;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)) 805px 0px,
@@ -191,41 +189,43 @@ li a {
 }
 
 .a_text {
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
-.a_text h4 {
+.a_text h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     font-stretch: extra-expanded;
     color: #CBA15E;
     display: inline;
-
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 80px 32px;
+    padding-bottom: 10px;
 }
 
-#dracks {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    border-bottom: 1px solid #CBA15E;
-}
 
-.a_text h2 {
-    margin-top: 13px;
+
+.a_text h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     color: white;
+    padding-bottom: 15px;
 }
 
 .a_text p {
-    margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #A1A1A1;
+    padding-bottom: 50px;
+}
+
+#amaintext {
+    width: 660px;
 }
 
 .a_text h3 {
@@ -234,50 +234,31 @@ li a {
     font-weight: 500;
     line-height: 28, 5px;
     color: white;
+    padding-bottom: 15px;
 }
 
-.newring {
-    margin-top: 50px;
+.aboutblock {
+    width: 430px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
-.newringtext {
-    margin-left: 23px;
+.blocktext {
+    width: 345px;
 }
 
-.wedding {
-    margin-top: 55px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.weddingtext {
-    margin-left: 23px;
-}
-
-.a_text button {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 45px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    padding: 19px 45px;
-    color: white;
-    font-weight: 400;
-    background-color: #CBA15E;
+.abutton {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 90px;
 }
 
 .clienticon {
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 70%;
-    height: 103px;
-
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -305,70 +286,71 @@ li a {
 .ourselection {
     width: 70%;
     height: 575px;
-    margin-top: 121px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.ourselection h4 {
+.ourselection h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 590;
     font-stretch: extra-expanded;
     color: #CBA15E;
     display: inline;
-
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 138px 32px;
+    padding-bottom: 10px;
 }
 
-#dracks2 {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    display: inline;
-    border-bottom: 1px solid #CBA15E;
-}
 
-.ourselection h2 {
+.ourselection h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     line-height: 55px;
     margin-top: 7px;
     color: white;
+    padding-bottom: 40px;
 }
 
 .items {
-    height: 482px;
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 .i {
     text-align: center;
 }
 
-.i h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #999999;
+.star {
+    padding-top: 7px;
 }
 
 .i h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.i p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
     color: white;
     display: inline;
 }
 
-.i h4 {
+.i span {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 10px;
     font-weight: 500;
     line-height: 24px;
@@ -379,8 +361,7 @@ li a {
 
 .curly2 {
     width: 1919px;
-    height: 1286px;
-    margin-top: 60px;
+    margin-top: 90px;
     background-image: url(imagine/curly2.png);
     background-repeat: no-repeat;
     margin-left: auto;
@@ -391,13 +372,13 @@ li a {
 .originofbeauty {
     padding-top: 80px;
     width: 70%;
-    height: 569px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 120px;
 }
 
 .hand {
@@ -420,38 +401,33 @@ li a {
 
 .text {
     width: 501px;
-    height: 400px;
 }
 
-.text h4 {
+.text h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     font-stretch: extra-expanded;
     color: #CBA15E;
-    display: inline;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 146px 32px;
+    padding-bottom: 10px;
 
 }
 
-#dracks3 {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    display: inline;
-    border-bottom: 1px solid #CBA15E;
-}
-
-.text h2 {
+.text h1 {
+    width: 388px;
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
-    margin-top: 7px;
     color: white;
+    padding-bottom: 17px;
 }
 
 .text p {
-    margin-top: 15px;
+    width: 501px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -459,34 +435,20 @@ li a {
     color: #A1A1A1;
 }
 
-.text button {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 45px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    padding: 19px 45px;
-    color: white;
-    font-weight: 400;
-    background-color: #CBA15E;
+.oobbutton {
+    padding-top: 60px;
 }
 
 .collection {
-    height: 528px;
     width: 100%;
-    margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 120px;
 }
 
 .b {
     position: relative;
-    height: 528px;
     width: 457px;
 }
 
@@ -519,7 +481,7 @@ li a {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.591);
-    background-size: 100% 100%;
+    background-size: 457px 528px;
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
@@ -531,94 +493,73 @@ li a {
 }
 
 .insta {
-    margin-top: 120px;
     width: 90%;
-    height: 510px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
-.insta h4 {
-    margin-left: 193px;
+.insta h2 {
+    padding-left: 193px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     font-stretch: extra-expanded;
     color: #CBA15E;
-    display: inline;
-
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 217px 32px;
+    padding-bottom: 10px;
 }
 
-#dracks4 {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    display: inline;
-    border-bottom: 1px solid #CBA15E;
-}
-
-.insta h2 {
-    margin-left: 193px;
+.insta h1 {
+    padding-left: 193px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
-    margin-top: 9px;
     color: white;
+    padding-bottom: 67px;
 }
 
 .instafoto {
-    margin-top: 65px;
-    height: 359px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 121px;
 }
 
 .news {
-    margin-top: 121px;
-    height: 770px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 70%;
 }
 
-.news h4 {
+.news h2 {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     font-stretch: extra-expanded;
     color: #CBA15E;
-    display: inline;
-
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 140px 32px;
+    padding-bottom: 10px;
 }
 
-#dracks5 {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    display: inline;
-    border-bottom: 1px solid #CBA15E;
-}
-
-.news h2 {
+.news h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
-    margin-top: 9px;
     font-stretch: semi-expanded;
     color: white;
+    padding-bottom: 40px;
 }
 
 .news2 {
     width: 100%;
-    margin-top: 44px;
-    height: 548px;
     display: grid;
     grid-template-areas:
         "A A A A   B B B B   B B B B"
@@ -670,22 +611,25 @@ li a {
     flex-direction: column;
 }
 
-.state a {
+.state h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #CBA15E;
     display: inline;
     margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.line2 {
+    width: 25px;
+    display: block;
+    border-bottom: 1px solid #CBA15E;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
-.invisman {
-    display: inline;
-    color: #181818;
-    font-size: 5px;
-    margin-top: 18px;
-    border-bottom: 1px solid #CBA15E;
-}
 
 .state h9 {
     font-family: 'Rubik', sans-serif;
