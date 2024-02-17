@@ -44,22 +44,22 @@
     </div>
 
     <div class="service">
-        <div class="s_icons">
+        <div class="s_icons" id="gift">
             <img src="imagine/gift.svg" alt="gift">
             <h2>Gift Package</h2>
-            <p>We'll choose the perfect gift box for your<br>
+            <p>We'll choose the perfect gift box for your
                 present.</p>
         </div>
-        <div class="s_icons">
+        <div class="s_icons" id="dimond">
             <img src="imagine/dimond.svg" alt="dimond">
             <h2>Diamond Selection</h2>
-            <p>Our consultants will help you to choose the<br>
+            <p>Our consultants will help you to choose the
                 right size.</p>
         </div>
-        <div class="s_icons">
+        <div class="s_icons" id="ring">
             <img src="imagine/ring.svg" alt="ring">
             <h2>Design Your Ring</h2>
-            <p>Individual engraving to perpetuate the<br>
+            <p>Individual engraving to perpetuate the
                 deepest feelings.</p>
         </div>
     </div>
@@ -253,100 +253,109 @@
     <div class="news">
         <h2>NEWS & INSPIRED<span class="line"></span></h2>
         <h1>Jewelry Style Files</h1>
-        <div class="news2">
-            <div class="sa">
+        <div class="newstext">
+            <div id="sa">
                 <img src="imagine/sa.png" alt="woman">
                 <div class="state">
                     <h4>September 9, 2023<span class="line2"></span>By Admin</h4>
-                    <h9>Traveling Solo Is Awesome</h9>
-                    <h11>Embrace contemporary aesthetics and clean geometric shapes. Create<br>
-                        bold and eye-catching designs using shapes like triangles, circles,<br>
-                        squares, or hexagons, and experiment with different materials finishes</h11>
+                    <h3>Traveling Solo Is Awesome</h3>
+                    <p id="firstnew">Embrace contemporary aesthetics and clean geometric shapes. Create
+                        bold and eye-catching designs using shapes like triangles, circles,
+                        squares, or hexagons, and experiment with different materials finishes</p>
                 </div>
             </div>
-            <div class="sb">
+            <div class="box" id="sb">
                 <img src="imagine/sb.png">
                 <div class="state">
                     <h4>September 9, 2023<span class="line2"></span>By Admin</h4>
-                    <h9>Engagement Rings – a Buyer’s Guide</h9>
+                    <h3>Engagement Rings – a Buyer’s Guide</h3>
                     <p>Combine elements from different cultures to<br>
                         create a collection that celebrates diversity.</p>
                 </div>
             </div>
-            <div class="sc">
+            <div class="box" id="sc">
                 <img src="imagine/sc.png">
                 <div class="state">
                     <h4>September 9, 2023<span class="line2"></span>By Admin</h4>
-                    <h9>Diamond Arrives at the New Paris Flagship Store</h9>
-                    <p>ake inspiration from the vastness of the night sky<br>
+                    <h3>Diamond Arrives at the New Paris Flagship Store</h3>
+                    <p>ake inspiration from the vastness of the night sky
                         and celestial bodies. Incorporate</p>
                 </div>
             </div>
-            <div class="sd">
+            <div class="box" id="sd">
                 <img src="imagine/sd.png">
                 <div class="state">
                     <h4>September 9, 2023<span class="line2"></span>By Admin</h4>
-                    <h9>Comment connaître sa taille de doigts ?</h9>
-                    <p>celestial motifs such as stars, moons, and galaxies<br>
+                    <h3>Comment connaître sa taille de doigts ?</h3>
+                    <p>celestial motifs such as stars, moons, and galaxies
                         into your designs. Consider using gemstones.</p>
                 </div>
             </div>
         </div>
-        <button><span>View More</span></button>
+        <div class="viewm">
+            <a href="#" class="button">View More</a>
+        </div> 
     </div>
 
     <footer>
         <div class="contact">
             <div class="signup">
-                <h2>Sign Up To Our Newsletter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur<br>
-                    adipiscing elit, sed do sod tempor incididunt<br>
+                <h1>Sign Up To Our Newsletter</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do sod tempor incididunt
                     ut labore et dolore magna aliqua.</p>
-                <button id="email"><span>Email Address</span></button>
-                <button id="sub"><span>Subscribe</span></button>
+                    <form action="index.html" method="post">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
             </div>
             <div class="company">
-                <h2>Company</h2>
-                <div class="textc">
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Services</p>
-                    <p>Projects</p>
-                    <p>Blogs</p>
-                </div>
+                <h1>Company</h1>
+                <nav class="textcompany">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="privacy">
-                <h2>Privacy</h2>
-                <div class="textc">
-                    <p>Term of usa</p>
-                    <p>Privacy policy</p>
-                    <p>Our team</p>
-                </div>
+                <h1>Privacy</h1>
+                <nav class="textcompany">
+                    <ul>
+                        <li><a href="#">Term of usa</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Our team</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="order">
-                <h2>Quick Order</h2>
-                <div class="text3">
-                    <p>(877) 834-1434</p>
-                    <p>jewelry@example.com</p>
-                    <p>Find a location nearest you.<br>
-                        See <a>Our Store</a></p>
-
-                </div>
+                <h1>Quick Order</h1>
+                <nav class="textorder">
+                    <ul>
+                        <li><a href="tel: (877) 834-1434">(877) 834-1434</a></li>
+                        <li><a href="mailto: jewelry@example.com">jewelry@example.com</a></li>
+                        <li><p>Find a location nearest you.<br>
+                            See <a href="#" id="ourstore">Our Store</a></p></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <hr width="100%" color="#C6C6C6" size="1px">
         <div class="thelast">
-            <div class="logo">
-                <img src="imagine/logo.svg" width="61px" height="45px">
+            <a class="lastlogo">
+                <img src="imagine/logo.svg" width="61px" height="45px" src="logo">
                 <h2>Jewelry</h2>
-            </div>
+            </a>
             <div class="copy">
                 <h2>@Copyright2023 Jewelry Theme. All rights reserved.</h2>
             </div>
             <div class="sm">
-                <img src="imagine/facebook.svg" width="10px" height="20px">
-                <img src="imagine/twitter.svg" width="22px" height="18px">
-                <img src="imagine/pin.svg" width="16px" height="20px">
+                <a href="#"><img src="imagine/facebook.svg" width="10px" height="20px" src="facebook"></a>
+                <a href="#"><img src="imagine/twitter.svg" width="22px" height="18px" src="twitter"></a>
+                <a href="#"><img src="imagine/pin.svg" width="16px" height="20px" src="pinterest"></a>
             </div>
         </div>
     </footer>

@@ -50,23 +50,23 @@ header {
     padding-top: 27px;
 }
 
-nav {
+.headerH nav {
     width: 394px;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: auto;
 }
 
-ul {
+.headerH ul {
     display: flex;
     justify-content: space-between;
 }
 
-li {
+.headerH li {
     list-style: none;
 }
 
-li a {
+.headerH li a {
     text-decoration: none;
     font-weight: lighter;
     font-size: 16px;
@@ -132,7 +132,6 @@ li a {
 }
 
 .button:hover {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     background-color: white;
     color: #000000;
@@ -156,18 +155,29 @@ li a {
 }
 
 .s_icons h2 {
+    font-family: 'Rubik', sans-serif;
     padding-top: 30px;
     font-size: 25px;
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     padding-bottom: 15px;
 }
 
 .s_icons p {
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 400;
     color: #A1A1A1;
     line-height: 19px;
+}
+#ring{
+    width: 286px;
+}
+#dimond{
+    width: 320px;
+}
+#gift{
+    width: 300px;
 }
 
 .about_back {
@@ -558,7 +568,7 @@ li a {
     padding-bottom: 40px;
 }
 
-.news2 {
+.newstext {
     width: 100%;
     display: grid;
     grid-template-areas:
@@ -569,55 +579,48 @@ li a {
     row-gap: 51px;
 }
 
-.sa {
+.box{
+    width: 656px;
+    height: 148px;
+    background-color: #1F1F1F;
+    display: grid;
+    grid-template-columns: 230px auto;
+    gap: 13px;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: #353535;
+}
+#sa {
     grid-area: A;
     width: 661px;
     height: 548px;
 }
 
-.sb {
+#sb {
     grid-area: B;
-    width: 656px;
-    height: 148px;
-    background-color: #1F1F1F;
-    display: grid;
-    grid-template-columns: 230px auto;
-    gap: 13px;
 }
 
-.sc {
+#sc {
     grid-area: C;
-    width: 656px;
-    height: 148px;
-    background-color: #1F1F1F;
-    display: grid;
-    grid-template-columns: 230px auto;
-    gap: 13px;
 }
 
-.sd {
+#sd {
     grid-area: D;
-    width: 656px;
-    height: 148px;
-    background-color: #1F1F1F;
-    display: grid;
-    grid-template-columns: 230px auto;
-    gap: 13px;
 }
 
 .state {
-    margin-top: 18px;
     display: flex;
     flex-direction: column;
 }
 
-.state h4 {
+.state h4{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #CBA15E;
     display: inline;
-    margin-top: 18px;
+    padding-top: 18px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -631,18 +634,18 @@ li a {
 }
 
 
-.state h9 {
+.state h3 {
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     font-weight: 600;
     line-height: 20px;
-    margin-top: 10px;
+    padding-top: 10px;
     font-stretch: semi-expanded;
     color: white;
 }
 
-.news h11 {
-    margin-top: 15px;
+#firstnew {
+    padding-top: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -651,7 +654,7 @@ li a {
 }
 
 .news p {
-    margin-top: 14px;
+    padding-top: 14px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -659,27 +662,14 @@ li a {
     color: #A1A1A1;
 }
 
-.news button {
-    border: none;
-    outline: none;
-    display: inline-block;
+.viewm{
+    padding-top: 60px;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 40px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    padding: 19px 45px;
-    color: white;
-    font-weight: 400;
-    background-color: #CBA15E;
-    margin-left: 590px;
+    padding-bottom: 139px;
 }
 
 footer {
-    margin-top: 120px;
     width: 100%;
-    height: 482px;
     background-color: #1F1F1F;
     background-image: url(imagine/curly3.png);
     background-position: 0px 45px;
@@ -689,16 +679,14 @@ footer {
 
 .contact {
     padding-top: 71px;
-    height: 331px;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     display: grid;
     grid-template-columns: 469px 100px 110px 339px;
     gap: 111px;
 }
 
-.contact h2 {
+.contact h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 22px;
     font-weight: 500;
@@ -713,6 +701,7 @@ footer {
 
 .signup p {
     margin-top: 18px;
+    width: 375px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -720,47 +709,67 @@ footer {
     color: #A1A1A1;
 }
 
-#email {
-    border: none;
-    outline: none;
-    display: inline-block;
-    text-decoration: none;
-    text-align: left;
-    cursor: pointer;
-    margin-top: 29px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    padding: 15px 16px;
-    padding-right: 142px;
-    color: #4D4343;
-    font-weight: 400;
-    background-color: #D9D9D9;
-    display: inline;
+.signup form{
+    padding-top: 29px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 126px;
+    
 }
-
-#sub {
+.signup input{
     border: none;
     outline: none;
-    display: inline-block;
+    padding-left: 15px;
+    width: 271px;
+    height: 54px;
+    color: #4D4343;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9D9D9;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+.signup button{
+    border: none;
+    outline: none;
+    text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     cursor: pointer;
-    font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    padding: 15px 30px;
-    color: white;
+    font-size: 16px;
     font-weight: 400;
-    display: inline;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 144px;
     background-color: #CBA15E;
-    margin-left: -4px;
 }
 
-.textc {
-    margin-top: -2px;
+.contact ul {
+    padding-top: 10px;
 }
 
-.textc p {
+.contact li {
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+.contact li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A1A1A1;
+    cursor: pointer;
+}
+
+.textorder ul {
+    padding-top: 22px;
+}
+
+.textorder p {
     margin-top: 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -769,20 +778,7 @@ footer {
     color: #A1A1A1;
 }
 
-.text3 {
-    margin-top: 22px;
-}
-
-.text3 p {
-    margin-top: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #A1A1A1;
-}
-
-.text3 a {
+#ourstore {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -792,26 +788,27 @@ footer {
 }
 
 .thelast {
-    margin-top: 20px;
+    padding-top: 20px;
     width: 70%;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.lastlogo {
     width: 230px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-.logo h2 {
-    margin-left: 10px;
-    margin-top: 9px;
+.lastlogo h2 {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 7px;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-size: 19px;
@@ -826,7 +823,7 @@ footer {
 }
 
 .copy h2 {
-    margin-top: 9px;
+    padding-bottom: 15px;
     font-family: 'Rubik', sans-serif;
     font-size: 21px;
     font-weight: 500;
@@ -837,7 +834,9 @@ footer {
 
 .sm {
     width: 229px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 0px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+.sm img{
+    padding-right: 32px;
 }
