@@ -8,7 +8,13 @@ body {
     background-color: #181818;
     width: 1920px;
     margin: auto;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
+
+
 
 .first {
     width: 100%;
@@ -18,11 +24,24 @@ body {
     background-size: 1920px 1002px 1920px 1002px;
     background-repeat: no-repeat;
     background-position: top left;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        background-image: none;
+        background-color: #5E5755;
+        height: 650px;
+    }
 }
+
+
 
 header {
     width: 100%;
     background: rgba(0, 0, 0, 0.537);
+
+    @media (max-width: 500px) {
+        background: rgba(0, 0, 0, 0.758);
+    }
 }
 
 .headerH {
@@ -32,6 +51,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .header_logo {
@@ -55,6 +81,10 @@ header {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-left: auto;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .headerH ul {
@@ -75,11 +105,26 @@ header {
     cursor: pointer;
 }
 
+#menu {
+    display: none;
+
+    @media (max-width: 500px) {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
 .jdesign {
     width: 70%;
     margin: auto;
     padding-top: 218px;
     padding-bottom: 333px;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        padding-top: 40px;
+        padding-left: 0px;
+    }
 }
 
 .jdesign h2 {
@@ -98,6 +143,10 @@ header {
     width: 32px;
     display: block;
     border-bottom: 1px solid #CBA15E;
+
+    @media (max-width: 500px) {
+        width: 16px;
+    }
 }
 
 .jdesign h1 {
@@ -118,6 +167,12 @@ header {
     line-height: 27px;
     padding-bottom: 80px;
     line-height: 26px;
+
+    @media (max-width: 500px) {
+        width: 300px;
+        padding-bottom: 65px;
+        font-size: 14px;
+    }
 }
 
 .button {
@@ -129,6 +184,10 @@ header {
     color: white;
     text-decoration: none;
     margin-right: 23px;
+
+    @media (max-width: 500px) {
+        padding: 15px 23px;
+    }
 }
 
 .button:hover {
@@ -138,20 +197,33 @@ header {
 }
 
 .service {
-    width: 1051px;
+    position: relative;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    margin: auto;
 }
 
 .s_icons {
     padding-top: 120px;
     text-align: center;
     padding-bottom: 120px;
+    object-fit: cover;
+
+    @media (max-width: 500px) {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
 }
 
 .s_icons h2 {
@@ -170,14 +242,46 @@ header {
     color: #A1A1A1;
     line-height: 19px;
 }
-#ring{
+
+#ring {
     width: 286px;
 }
-#dimond{
+
+#dimond {
     width: 320px;
+
 }
-#gift{
+
+#gift {
     width: 300px;
+}
+
+.service button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #CBA15E;
+}
+
+.prev-button {
+    margin-right: 500px;
+
+    @media (max-width: 500px) {
+        margin-right: 270px;
+    }
+}
+
+.next-button {
+    margin-left: 500px;
+
+    @media (max-width: 500px) {
+        margin-left: 270px;
+    }
 }
 
 .about_back {
@@ -186,6 +290,13 @@ header {
     background-image: url(imagine/curly.png);
     background-repeat: no-repeat;
     background-position: left top 170px;
+
+    @media (max-width: 500px) {
+        background-position: left 170px;
+        background-size: cover;
+        width: 100%;
+    }
+
 }
 
 .about {
@@ -196,10 +307,18 @@ header {
         url(imagine/woman.png) 805px 0px, url(imagine/rings.png) 442px 325px;
     background-size: 545px 689px, auto, auto;
     background-repeat: no-repeat;
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
 }
 
 .a_text {
     padding-top: 65px;
+
+    @media (max-width: 500px) {
+        padding-top: 65px;
+    }
 }
 
 .a_text h2 {
@@ -232,10 +351,18 @@ header {
     line-height: 24px;
     color: #A1A1A1;
     padding-bottom: 50px;
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 
 #amaintext {
     width: 660px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .a_text h3 {
@@ -245,6 +372,10 @@ header {
     line-height: 28, 5px;
     color: white;
     padding-bottom: 15px;
+
+    @media (max-width: 500px) {
+        font-size: 16px;
+    }
 }
 
 .aboutblock {
@@ -253,16 +384,35 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+
+}
+
+.aboutblock img {
+    @media (max-width: 500px) {
+        padding-right: 10px;
+    }
 }
 
 .blocktext {
     width: 345px;
+
+    @media (max-width: 500px) {
+        width: auto;
+    }
 }
 
 .abutton {
     display: block;
     padding-top: 20px;
     padding-bottom: 90px;
+
+    @media (max-width: 500px) {
+        text-align: center;
+    }
 }
 
 .clienticon {
@@ -275,6 +425,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .clienticon h2 {
@@ -298,6 +452,11 @@ header {
     height: 575px;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        height: auto;
+    }
 }
 
 .ourselection h2 {
@@ -328,6 +487,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 
 }
 
@@ -369,13 +532,21 @@ header {
     display: inline;
 }
 
+
 .curly2 {
     width: 1919px;
-    margin-top: 90px;
+    padding-top: 90px;
     background-image: url(imagine/curly2.png);
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        padding-top: 40px;
+        background-position: left;
+        background-size: cover;
+    }
 
 }
 
@@ -389,6 +560,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 120px;
+
+    @media (max-width: 500px) {
+        width: 90%;
+        display: block;
+    }
+}
+
+.tresh {
+    width: 804px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .hand {
@@ -411,6 +598,10 @@ header {
 
 .text {
     width: 501px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .text h2 {
@@ -434,6 +625,10 @@ header {
     line-height: 50px;
     color: white;
     padding-bottom: 17px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .text p {
@@ -443,18 +638,71 @@ header {
     font-weight: 400;
     line-height: 24px;
     color: #A1A1A1;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .oobbutton {
     padding-top: 60px;
 }
 
+
 .collection {
+    text-align: center;
     width: 100%;
+    padding-bottom: 120px;
+
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+.slider2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 120px;
+
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        transition: transform 0.5s ease-in-out;
+        margin: auto;
+        width: 228px;
+    }
+}
+
+.collection button {
+    visibility: hidden;
+
+    @media (max-width: 500px) {
+        visibility: visible;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: #CBA15E;
+    }
+}
+
+.prev-button2 {
+    @media (max-width: 500px) {
+        padding-top: 50px;
+    }
+}
+
+.next-button2 {
+    @media (max-width: 500px) {
+        padding-top: 50px;
+    }
 }
 
 .b {
@@ -475,6 +723,20 @@ header {
     font-stretch: semi-expanded;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+
+    @media (max-width: 500px) {
+        position: absolute;
+        font-size: 16px;
+        top: 100px;
+        left: 94px;
+    }
+}
+
+.b img {
+    @media (max-width: 500px) {
+        width: 228px;
+        height: 228px;
+    }
 }
 
 .b:hover p {
@@ -495,6 +757,11 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: opacity .2s, visibility .2s;
+
+    @media (max-width: 500px) {
+        width: 228px;
+        height: 228px;
+    }
 }
 
 .b:hover .invis {
@@ -519,6 +786,10 @@ header {
     gap: 5px;
     grid-template-columns: 217px 32px;
     padding-bottom: 10px;
+
+    @media (max-width: 500px) {
+        padding-left: 0px;
+    }
 }
 
 .insta h1 {
@@ -530,6 +801,11 @@ header {
     line-height: 50px;
     color: white;
     padding-bottom: 67px;
+
+    @media (max-width: 500px) {
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
 }
 
 .instafoto {
@@ -538,11 +814,30 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 121px;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+.instafoto img {
+    @media (max-width: 500px) {
+        width: 243px;
+        height: 270px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}
+
 
 .news {
     margin: auto;
     width: 70%;
+
+    @media (max-width: 500px) {
+        width: 90%;
+    }
 }
 
 .news h2 {
@@ -566,6 +861,11 @@ header {
     font-stretch: semi-expanded;
     color: white;
     padding-bottom: 40px;
+
+    @media (max-width: 500px) {
+        padding-bottom: 30px;
+
+    }
 }
 
 .newstext {
@@ -577,9 +877,25 @@ header {
         "A A A A   D D D D   D D D D";
     column-gap: 34px;
     row-gap: 51px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
 }
 
-.box{
+.smallnew {
+    @media (max-width: 500px) {
+        display: none;
+
+    }
+}
+
+.box {
     width: 656px;
     height: 148px;
     background-color: #1F1F1F;
@@ -587,14 +903,33 @@ header {
     grid-template-columns: 230px auto;
     gap: 13px;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        display: block;
+    }
 }
-.box:hover{
+
+.box:hover {
     background-color: #353535;
 }
+
 #sa {
     grid-area: A;
     width: 661px;
     height: 548px;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#sa img {
+    @media (max-width: 500px) {
+        width: 100%;
+        position: relative;
+    }
 }
 
 #sb {
@@ -612,9 +947,13 @@ header {
 .state {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 500px) {
+        padding-left: 8px;
+    }
 }
 
-.state h4{
+.state h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -625,6 +964,7 @@ header {
     flex-direction: row;
     align-items: baseline;
 }
+
 .line2 {
     width: 25px;
     display: block;
@@ -642,6 +982,10 @@ header {
     padding-top: 10px;
     font-stretch: semi-expanded;
     color: white;
+
+    @media (max-width: 500px) {
+        padding-top: 8px;
+    }
 }
 
 #firstnew {
@@ -660,9 +1004,13 @@ header {
     font-weight: 400;
     line-height: 24px;
     color: #A1A1A1;
+
+    @media (max-width: 500px) {
+        padding-top: 8px;
+    }
 }
 
-.viewm{
+.viewm {
     padding-top: 60px;
     text-align: center;
     padding-bottom: 139px;
@@ -675,15 +1023,25 @@ footer {
     background-position: 0px 45px;
     background-size: auto;
     background-repeat: no-repeat;
+
+    @media (max-width: 500px) {
+        background-size: cover;
+    }
 }
 
 .contact {
     padding-top: 71px;
     width: 70%;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 469px 100px 110px 339px;
     gap: 111px;
+
+    @media (max-width: 500px) {
+        width: 90%; 
+        display: block;
+        flex-direction: column;
+    }
 }
 
 .contact h1 {
@@ -697,6 +1055,10 @@ footer {
 
 .signup {
     text-align: left;
+    @media (max-width: 500px) {
+        text-align: center;
+        padding-bottom: 55px;
+    }
 }
 
 .signup p {
@@ -709,14 +1071,19 @@ footer {
     color: #A1A1A1;
 }
 
-.signup form{
+.signup form {
     padding-top: 29px;
     display: flex;
     flex-direction: row;
     padding-bottom: 126px;
-    
+
+    @media (max-width: 500px) {
+        padding-bottom: 0px;
+    }
+
 }
-.signup input{
+
+.signup input {
     border: none;
     outline: none;
     padding-left: 15px;
@@ -728,9 +1095,14 @@ footer {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    
+
+    @media (max-width: 500px) {
+        width: 240px;
+    }
+
 }
-.signup button{
+
+.signup button {
     border: none;
     outline: none;
     text-transform: uppercase;
@@ -744,15 +1116,60 @@ footer {
     color: #FFFFFF;
     width: 144px;
     background-color: #CBA15E;
+    @media (max-width: 500px) {
+        width: 110px;
+    }
+}
+    .row{
+        width: 660px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 500px) {
+            width: auto;
+        }
+    }
+
+.company{
+    @media (max-width: 500px) {
+        padding-bottom: 40px;
+    }
+}
+
+.privacy{
+    @media (max-width: 500px) {
+        padding-bottom: 40px;
+    }
+}
+
+.order{
+    @media (max-width: 500px) {
+        padding-bottom: 40px;
+    }
+}
+
+.textcompany{
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+
+.textorder{
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .contact ul {
     padding-top: 10px;
+   
 }
 
 .contact li {
     list-style: none;
     padding-bottom: 12px;
+    
+
 }
 
 .contact li a {
@@ -763,6 +1180,7 @@ footer {
     line-height: 24px;
     color: #A1A1A1;
     cursor: pointer;
+   
 }
 
 .textorder ul {
@@ -770,7 +1188,6 @@ footer {
 }
 
 .textorder p {
-    margin-top: 12px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -790,11 +1207,19 @@ footer {
 .thelast {
     padding-top: 20px;
     width: 70%;
-    margin:auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 500px) {
+        width: 90%;
+        display: grid;
+        grid-template-areas: 
+        "A A  B B"
+        "C C  C C";
+        column-gap: 35px;
+    }
 }
 
 .lastlogo {
@@ -803,6 +1228,10 @@ footer {
     flex-direction: row;
     align-items: center;
     padding-bottom: 20px;
+    @media (max-width: 500px) {
+        grid-area: A;
+        width: 161px;
+    }
 }
 
 .lastlogo h2 {
@@ -820,6 +1249,12 @@ footer {
 
 .copy {
     width: 540px;
+    @media (max-width: 500px) {
+        text-align: center;
+        width: auto;
+        grid-area: C;
+        padding-bottom: 10px;
+    }
 }
 
 .copy h2 {
@@ -830,13 +1265,24 @@ footer {
     line-height: 25px;
     font-stretch: semi-expanded;
     color: white;
+    @media (max-width: 500px) {
+        font-size: 16px;
+    }
 }
 
 .sm {
     width: 229px;
     padding-bottom: 15px;
     padding-left: 20px;
+    @media (max-width: 500px) {
+        grid-area: B;
+        width: 161px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
-.sm img{
+
+.sm img {
     padding-right: 32px;
 }
