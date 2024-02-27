@@ -1039,7 +1039,7 @@ footer {
     gap: 111px;
 
     @media (max-width: 500px) {
-        width: 90%; 
+        width: 90%;
         display: block;
         flex-direction: column;
     }
@@ -1056,6 +1056,7 @@ footer {
 
 .signup {
     text-align: left;
+
     @media (max-width: 500px) {
         text-align: center;
         padding-bottom: 55px;
@@ -1070,6 +1071,10 @@ footer {
     font-weight: 300;
     line-height: 26px;
     color: #A1A1A1;
+
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .signup form {
@@ -1080,7 +1085,10 @@ footer {
 
     @media (max-width: 500px) {
         padding-bottom: 0px;
+        width: 100%;
+        flex-direction: column;
     }
+
 
 }
 
@@ -1098,7 +1106,11 @@ footer {
     line-height: 24px;
 
     @media (max-width: 500px) {
-        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        width: 80%;
+        margin-bottom: 20px;
     }
 
 }
@@ -1117,45 +1129,54 @@ footer {
     color: #FFFFFF;
     width: 144px;
     background-color: #CBA15E;
+
     @media (max-width: 500px) {
         width: 110px;
+        height: 36px;
+        margin: auto;
     }
 }
-    .row{
-        width: 660px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        @media (max-width: 500px) {
-            width: auto;
-        }
+
+.row {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 500px) {
+        width: auto;
     }
 
-.company{
+    @media (max-width: 337px) {
+        display: none;
+    }
+}
+
+.company {
     @media (max-width: 500px) {
         padding-bottom: 40px;
     }
 }
 
-.privacy{
+.privacy {
     @media (max-width: 500px) {
         padding-bottom: 40px;
     }
 }
 
-.order{
+.order {
     @media (max-width: 500px) {
         padding-bottom: 40px;
     }
 }
 
-.textcompany{
+.textcompany {
     @media (max-width: 500px) {
         display: none;
     }
 }
 
-.textorder{
+.textorder {
     @media (max-width: 500px) {
         display: none;
     }
@@ -1163,13 +1184,13 @@ footer {
 
 .contact ul {
     padding-top: 10px;
-   
+
 }
 
 .contact li {
     list-style: none;
     padding-bottom: 12px;
-    
+
 
 }
 
@@ -1181,7 +1202,7 @@ footer {
     line-height: 24px;
     color: #A1A1A1;
     cursor: pointer;
-   
+
 }
 
 .textorder ul {
@@ -1213,13 +1234,17 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     @media (max-width: 500px) {
         width: 90%;
         display: grid;
-        grid-template-areas: 
-        "A A  B B"
-        "C C  C C";
-        column-gap: 35px;
+        grid-template-areas:
+            "A A  B B"
+            "C C  C C";
+    }
+
+    @media (max-width: 337px) {
+        display: none;
     }
 }
 
@@ -1229,6 +1254,7 @@ footer {
     flex-direction: row;
     align-items: center;
     padding-bottom: 20px;
+
     @media (max-width: 500px) {
         grid-area: A;
         width: 161px;
@@ -1250,9 +1276,10 @@ footer {
 
 .copy {
     width: 540px;
+
     @media (max-width: 500px) {
         text-align: center;
-        width: auto;
+        width: 100%;
         grid-area: C;
         padding-bottom: 10px;
     }
@@ -1266,6 +1293,7 @@ footer {
     line-height: 25px;
     font-stretch: semi-expanded;
     color: white;
+
     @media (max-width: 500px) {
         font-size: 16px;
     }
@@ -1275,9 +1303,10 @@ footer {
     width: 229px;
     padding-bottom: 15px;
     padding-left: 20px;
+
     @media (max-width: 500px) {
         grid-area: B;
-        width: 161px;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
